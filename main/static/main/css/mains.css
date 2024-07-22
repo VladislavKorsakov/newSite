@@ -1,0 +1,47 @@
+body {
+    background: rgb(168, 228, 160);
+}
+aside ul {
+    list-style: none;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+main {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+a {
+    color: purple;
+    font-family: helvetica;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+  }
+  
+  a:visited {
+    color: red;
+  }
+
+
+
+

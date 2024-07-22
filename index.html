@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href='{% static "./main/css/mains.css" %}'>
+</head>
+
+{% block title %}
+    POLNIY TITLE
+{% endblock %}
+
+
+{% block content %}
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'calculation' %}"
+        style="background-color: red;
+        box-shadow: 0 5px 0 darkred;
+        color: white;
+        padding: 1em 1.5em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;">
+        Рассчёт кредитоспособности физического лица
+        </a>
+    {% else %}
+        <p>Authentication please</p>
+    {% endif %}
+{% endblock %}
